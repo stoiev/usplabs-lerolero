@@ -1,0 +1,19 @@
+version: "3"
+services:
+  lerolero:
+    image: ivanstoiev/lerolero
+    build:
+      context: .
+    environment:
+      PYTHONUNBUFFERED: 1
+  html2pdf:
+    image: pink33n/html-to-pdf
+    volumes:
+      - ./:/tmp/html-to-pdf
+    command:
+      - --url
+      - "http://lerolero:8080/lerolero?title=A+incogniscibilidade+p%F3s-moderna+do+Ser&number_of_paragraphs=10&min_sentences_per_paragraph=3&max_sentences_per_paragraph=7"
+      - --pdf
+      - out.pdf
+    depends_on:
+      - lerolero
