@@ -18,11 +18,11 @@
     "default": {
         "bottle": {
             "hashes": [
-                "sha256:1896a33b2c7c5be07491e6789e341f2e9593a0ff024cc0374615118587c81647",
-                "sha256:e9eaa412a60cc3d42ceb42f58d15864d9ed1b92e9d630b8130c871c5bb16107c"
+                "sha256:a9d73ffcbc6a1345ca2d7949638db46349f5b2b77dac65d6494d45c23628da2c",
+                "sha256:f6b8a34fe9aa406f9813c02990db72ca69ce6a158b5b156d2c41f345016a723d"
             ],
             "index": "pypi",
-            "version": "==0.12.17"
+            "version": "==0.12.19"
         }
     },
     "develop": {}
